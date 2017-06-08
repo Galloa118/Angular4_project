@@ -9,12 +9,12 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
-    new Recipe( 'A Test Recipe',
+    new Recipe( 'Chicken',
                 'This is simply a test',
                 'http://www.seriouseats.com/images/2015/09/20150914-pressure-cooker-recipes-roundup-09.jpg' ),
-  new Recipe( 'A Test Recipe2',
+  new Recipe( 'Hamburger',
               'This is simply a test2',
-              'http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/dining/changing%20meal%20plans.jpg' )
+              'http://ffmag.com/wp-content/uploads/2016/03/Burger_WEB.jpg' )
   ]; //sa :Recipe[] kazemo da ce recipes type biti polje klase Recipe
 
   constructor() { }
