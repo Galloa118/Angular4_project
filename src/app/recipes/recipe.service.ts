@@ -31,6 +31,10 @@ export class RecipeService {
     return this.recipes.slice(); //sa slice vracamo kopiju, a ne original recipes
   }
 
+  getRecipe(index: number){
+    return this.recipes[index];
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]){
       this.slService.addIngredients(ingredients);
   }
